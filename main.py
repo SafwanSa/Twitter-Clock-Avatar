@@ -1,7 +1,7 @@
 import base64
 from io import BytesIO
 from PIL import Image
-import datetime 
+import datetime, timedelta
 import math
 import os
 import requests
@@ -21,7 +21,7 @@ class ImageGenerator:
     def _get_current_angle(self) -> int:
         minutes = 720
         angels = 360
-        now = datetime.datetime.now()
+        now = datetime.datetime.now() + timedelta(hours=3)
         current_minute = (now.hour % 12) * 60 + now.minute
         current_angle = (current_minute/minutes) * angels
         return current_angle
