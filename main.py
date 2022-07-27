@@ -19,10 +19,11 @@ class ImageGenerator:
         return rotated
 
     def _get_current_angle(self) -> int:
-        hours = 12
+        minutes = 720
         angels = 360
-        current_hour = datetime.datetime.now().hour % 12
-        current_angle = int((current_hour/hours) * angels)
+        now = datetime.datetime.now()
+        current_minute = (now.hour % 12) * 60 + now.minute
+        current_angle = (current_minute/minutes) * angels
         return current_angle
 
     def _overlay_clock(self, img) -> int:
@@ -71,11 +72,12 @@ def main():
     image_generator = ImageGenerator()
     img = image_generator.generate('docs/me.png').convert('RGB')
     tm = TwitterManager()
+    # img.show()
     tm.update_profile_pic(image_generator.im_2_bytes(img))
     
 if __name__ == '__main__':
-    # main()
-    pass
+    main()
+    # pass
     
 
 def cronjob():
@@ -85,3 +87,4 @@ def cronjob():
     """
     print("Cron job is running")
     print("Tick! The time is: %s" % datetime.datetime.now())
+    main()
