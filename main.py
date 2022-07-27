@@ -26,7 +26,7 @@ class ImageGenerator:
         return current_angle
 
     def _overlay_clock(self, img) -> int:
-        clock = Image.open("./images/clock.png").convert("RGBA")
+        clock = Image.open("docs/clock.png").convert("RGBA")
         x, y = img.size
         img.paste(clock, (0, 0, x, y), mask = clock)
         return img
@@ -69,7 +69,7 @@ class TwitterManager:
 
 def main():
     image_generator = ImageGenerator()
-    img = image_generator.generate('images/me.png').convert('RGB')
+    img = image_generator.generate('docs/me.png').convert('RGB')
     tm = TwitterManager()
     tm.update_profile_pic(image_generator.im_2_bytes(img))
     
