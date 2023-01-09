@@ -14,5 +14,5 @@ https://twitter.com/safwanoz/status/1552353830385360896?s=46&t=pWokXzG-t6F5vV3y1
 2. Create a vertual environment
 3. Run `pip install -r requirements.txt`
 4. Create  a ***.env*** file copied from ***.env_example*** file
-5. Replace the image "me.png" with the target image
+5. Replace the image "images/me.png" with the target image
 6. Rename your image to "me.png"
