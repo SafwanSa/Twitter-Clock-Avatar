@@ -2,11 +2,9 @@
 
   A Twitter bot that turn your avatar into a clock
 
-![](IMG_2954.jpg)
-
-![](IMG_2955.jpg)
-
-![](IMG_2956.jpg)
+<a href='https://postimg.cc/gwC50d1h' target='_blank'><img src='https://i.postimg.cc/gwC50d1h/IMG-2954.jpg' border='0' alt='IMG-2954'/></a>
+<a href='https://postimg.cc/142g5dzQ' target='_blank'><img src='https://i.postimg.cc/142g5dzQ/IMG-2955.jpg' border='0' alt='IMG-2955'/></a>
+<a href='https://postimg.cc/5HVL9Rn0' target='_blank'><img src='https://i.postimg.cc/5HVL9Rn0/IMG-2956.jpg' border='0' alt='IMG-2956'/></a>
 
 https://twitter.com/safwanoz/status/1552353830385360896?s=46&t=pWokXzG-t6F5vV3y1KcFtg
 
